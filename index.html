@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/udemig.ico" type="image/x-icon">
+    <title>Udemig- Bootstrap</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css" />
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;900&family=Raleway:wght@300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+
+        #egitimler li:hover {
+            transform: translate(10px, -20px);
+            box-shadow: 2px 2px 20px blue;
+            transition: all .3s;
+        }
+
+        #egitimler li {
+            transition: all .5s;
+
+        }
+
+        #egitimler li .btn {
+            transition: all .3s;
+        }
+
+        #egitimler li .btn:hover {
+            border-radius: 25px;
+            background-color: blueviolet;
+            transition: all .3s;
+
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <!-- header start -->
+    <!--NAVABAR START  -->
+    <nav class="navbar navbar-expand-lg  navbar-dark bg-dark sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand fw-bold fs-1" href="#"></a>
+            <img src="images/Udemig.png" alt="logo" style="width: 50px;"> Udemig
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+                aria-labelledby="offcanvasDarkNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Menü</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="/">Anasayfa</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/egitimler.html">Eğitimlerimiz</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/iletisim.html">İletişim</a>
+                        </li>
+                    </ul>
+                    <div class="btn-group">
+                        <a href="/kaydol.html" class="btn btn-info">Kaydol</a>
+                        <a href="/kaydol.html" class="btn btn-success">Giriş Yap</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- NAVBAR END -->
+    <!-- header end -->
+    <!-- main content start-->
+    <!-- hero -->
+
+    <div class="container my-5">
+        <div class="row d-flex border shadow ">
+            <div class="col-lg-6 col-sm-12 d-flex flex-column justify-content-center align-items-center">
+                <h1>Yazılım Öğrenmek Istiyorsanız Doğru Yerdesiniz</h1>
+                <p>Teknolojiye adım atmaya hazır mısınız? Yazılım eğitim kampımız, sizi yazılım dünyasında başarılı
+                    olmanız için ihtiyaç duyduğunuz bilgi ve becerilerle donatmak için tasarlanmıştır. Eğitmenlerimiz,
+                    öğrenme yolculuğunuzun her adımında size rehberlik edecek ve size bir kodlama uzmanı olmanız için
+                    gereken güveni ve araçları verecektir!</p>
+
+            </div>
+            <div class="col-lg-6 col-sm-12 d-flex align-items-center justify-content-center">
+                <img class="w-100" src="images/banner.png" alt="hero img">
+            </div>
+
+        </div>
+    </div>
+    <!-- hero end -->
+
+    <div id="egitimler" class="container my-5">
+        <ul class="thumbnails row d-flex justify-content-center align-items-center gap-5 mt-3 flex-wrap">
+            <li class="col-lg-3  col-md-5 col-sm-12 border   p-3 rounded list-unstyled ">
+                <div class="thumbnail">
+                    <img data-src="" src="images/front-end.jpg" class="w-100" alt="">
+                    <div class="caption">
+                        <h3 class="border-bottom">Frontend</h3>
+                        <p>Frontend eğitimi bootcampi, web tasarımı ve geliştirme becerilerini geliştirmek için
+                            profesyonel bir programdır. HTML, CSS, JavaScript ve diğer teknolojiler öğrenilir.</p>
+
+                    </div>
+                    <p><a href="#" class="btn btn-primary d-block m-auto  bottom-0">Detaylı Bilgi</a></p>
+                </div>
+            </li>
+            <li class="col-lg-3  col-md-5 col-sm-12 border  p-3 rounded list-unstyled">
+                <div class="thumbnail">
+                    <img data-src="" src="images/front-end.jpg" class="w-100" alt="">
+                    <div class="caption">
+                        <h3>Quality Assuarance</h3>
+                        <p>Mükemmeliyetçi yazılım test etme becerileri kazandırmak için profesyonel bir programdır. Test
+                            metodları, en iyi uygulamalar ve araçlar öğrenilir.</p>
+                        <p><a href="#" class="btn btn-primary d-block m-auto bottom-0">Detaylı Bilgi</a></p>
+                    </div>
+                </div>
+            </li>
+            <li class="col-lg-3  col-md-5 col-sm-12 border    p-3 rounded list-unstyled">
+                <div class="thumbnail">
+                    <img data-src="" src="images/front-end.jpg" class="w-100" alt="">
+                    <div class="caption">
+                        <h3>React Native</h3>
+                        <p>Mükemmeliyetçi yazılım test etme becerileri kazandırmak için profesyonel bir programdır. Test
+                            metodları, en iyi uygulamalar ve araçlar öğrenilir.</p>
+                        <p><a href="#" class="btn btn-primary d-block m-auto bottom-0">Detaylı Bilgi</a></p>
+                    </div>
+                </div>
+            </li>
+
+
+        </ul>
+    </div>
+    <!-- neyi amacliyoruz -->
+    <div class="container  px-4 py-5 bg-black rounded">
+        <h2 class="pb-2 text-warning text-center">NEYİ AMAÇLIYORUZ</h2>
+        <div class="row g-4 py-5 row-cols-1 row-cols-lg-3 p-4 flex-lg-nowrap" >
+            <div class=" border p-3 rounded bg-secondary text-white me-2 ">
+                <h3 class="fs-2 text-info">Gerçeğe Dayalı</h3>
+                <p class="fs-5">Öğrencilere gerçek dünya uygulamalarında kullanabilecekleri beceriler kazandırmaktır.
+                    Örneğin,
+                    öğrenciler web siteleri ve uygulamalar yazabilecek, veri analizi yapabilecek, veritabanları
+                    yönetebilecek veya mobil uygulamalar oluşturabilecektir.
+                </p>
+            </div>
+            <div class=" border p-3 rounded bg-secondary text-white me-2">
+                <h3 class="fs-2 text-info">Temel Beceriler</h3>
+                <p class="fs-5">Öğrencilere temel programlama kavramlarını ve pratik uygulamalarını öğretmektir. Bu,
+                    öğrencilere
+                    bilgisayar programlama dilleri konusunda temel bilgi ve becerileri kazandırmak için gereklidir.</p>
+
+            </div>
+            <div class=" border p-3 rounded bg-secondary text-white">
+                <h3 class="fs-2 text-info">Sektöre Giriş</h3>
+                <p class="fs-5">Program süresince öğrencilere gerçek dünya uygulamalarında kullanabilecekleri beceriler kazandırmak
+                    ve onları iş pazarına hazırlamak için tasarlanmıştır. Öğrenciler programı bitirdikten sonra, yazılım
+                    sektöründe iş bulabilecektir.</p>
+            </div>
+        </div>
+    </div>
+    <!-- neyi amacliyoruz end-->
+
+
+
+    <!-- main content end-->
+    <!-- footer start -->
+    <div class="container">
+        <footer class="py-5 sticky-bottom ">
+            <div class="row">
+                <div class="col-2 ">
+                    <h5>Section</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+                    </ul>
+                </div>
+
+
+
+                <div class="col-6  offset-lg-4">
+                    <form>
+                        <h5>Bizden yeni haberler için abone olunuz.</h5>
+                        <p>Sizin için haftalik haberleri ve güncel yorumlarimizi epostaniza gönderiyoruz.</p>
+                        <div class="d-flex w-100 gap-2">
+                            <label for="newsletter1" class="visually-hidden">Email adresiniz</label>
+                            <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+                            <button class="btn btn-primary" type="button">Abone olunuz</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="d-flex justify-content-around py-4 my-4 border-top">
+                <p>&copy; 2023 Company, Inc. All rights reserved.</p>
+                <ul class="list-unstyled d-flex">
+                    <li class="ms-3"><a class="link-dark" href="#"><i class="fab fa-github-square fs-3" aria-hidden="true"></i></a></li>
+                    <li class="ms-3"><a class="link-dark" href="#"><i class="fab fa-twitter-square fs-3" aria-hidden="true"></i></a></li>
+                    <li class="ms-3"><a class="link-dark" href="#"> <i class="fab fa-facebook-square fs-3" aria-hidden="true"></i></a></li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+    <!-- footer end -->
+
+    <!--Bootstrap script codes -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

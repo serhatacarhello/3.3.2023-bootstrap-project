@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/udemig.ico" type="image/x-icon">
+    <title>Udemig - Kaydol</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;900&family=Raleway:wght@300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&display=swap"
+        rel="stylesheet">
+      
+</head>
+
+<body class="text-center">
+    <!-- header start -->
+    <!--NAVABAR START  -->
+    <nav class="navbar navbar-expand-lg  navbar-dark bg-dark sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand fw-bold fs-1" href="#"></a>
+            <img  src="images/Udemig.png" alt="logo" style="width: 50px;">Udemig
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+                aria-labelledby="offcanvasDarkNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Menü</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="/">Anasayfa</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/egitimler.html">Eğitimlerimiz</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/iletisim.html">İletişim</a>
+                        </li>
+                    </ul>
+                    <div class="btn-group">
+                        <a href="/kaydol.html" class="btn btn-info">Kaydol</a>
+                        <a href="/kaydol.html" class="btn btn-success">Giriş Yap</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- NAVBAR END -->
+    <!-- header end -->
+    <!-- main content start-->    
+        <main  class="form-signin w-100 m-auto row">
+          <form style="box-shadow: 2px 2px 20px blue;"  class=" col-lg-6 m-auto mt-5 p-5 border rounded">
+            <img class="mb-4 m-auto mt-4" src="images/Udemig.png" alt="" width="72" height="57">
+            <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
+        
+            <div class="form-floating">
+              <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+              <label for="floatingInput">Email address</label>
+            </div>
+            <div class="form-floating">
+              <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+              <label for="floatingPassword">Şifrenizi başkalarına söylemeyeceğiz. </label>
+            </div>
+        
+            <div class="checkbox mb-3">
+              <label>
+                <input type="checkbox" value="remember-me"> Köyümün sularını içmek istiyorum.
+              </label>
+            </div>
+            <button class="w-100 btn btn-lg btn-primary" type="submit">Sign in</button>
+            <p class="mt-5 mb-3 text-muted">&copy; 2023</p>
+          </form>
+        </main>
+        
+    <!-- main content end-->
+    <!--Bootstrap script codes -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
